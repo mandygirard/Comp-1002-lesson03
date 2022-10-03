@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./ ">Home</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h1>Contact Me</h1>
+    </header>
+
+    <main>
+        <form action="./thanks.html" method="post"
+        name="lesson03-contact-me"
+        netlify>
+
+        <fieldset>
+    <legend>Your Information </legend>
+
+    <div>
+        <label for="firstName">First Name</label><br>
+        <input type="text" name="firstName" id="firstName" required maxlength="20" minlength="2" placeholder="Jane"><br>
+        <small>Required!</small>
+    </div>
+    
+    <div>
+        <label for="lastName">Last Name</label><br>
+        <input type="text" name="lastName" id="lastName" required maxlength="20" minlength="2" placeholder="Smith"><br>
+        <small>Required!</small>
+    </div>
+
+    <div>
+        <label for="company">Company</label><br>
+        <input type="text" name="company" id="company" maxlength="50" minlength="2" placeholder="Ministry of Magic">
+    </div>
+
+    <div>
+        <label for="noOfEmployees">Number of Employees</label><br>
+        <span>N/A</span><input type="radio" name="noOfEmployees" id="noOfEmployees" checked>
+        <span>1 - 25</span><input type="radio" name="noOfEmployees" id="noOfEmployees" value="1-25">
+        <span>26 - 100</span><input type="radio" name="noOfEmployees" id="noOfEmployees" value="26-100">
+        <span>100+</span><input type="radio" name="noOfEmployees" id="noOfEmployees" value="100+">
+
+    </div>
+
+        </fieldset>
+
+        <fieldset>
+
+    <legend>Your Contact Options</legend>
+    <div>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" placeholder="your@emailhere.com"> required <br>
+        <small>Required!</small>
+    </div>
+        </fieldset>
+    <div>
+        <label for="tel">Phone:</label><br>
+        <input type="tel" name="tel" id="tel" placeholder="1(666)666-6666">
+    </div>
+        </fieldset>
+
+        <fieldset>
+    <legend>Inquiries</legend>
+    <div>
+        <label for="inquiryType">What is your inquiry about?</label><br>
+        <select name="inquiryType" id="inquiryType"required>
+            <option Please select an inquiry option.></option>
+            <option value="Employment">Employment Opportunity</option>
+            <option value="Business ">Business Opportunity </option>
+            <option value="Freelance">Freelance Inquiry</option>
+            <option value="general" selected >General Inquiry</option> 
+        </select>   
+            <br>
+            <small>Required!</small>
+         
+        
+    </div>
+
+    <div>
+        <label for="message">Your Message</label><br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your inquiry here"></textarea>
+    </div>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Submit Inquiry">
+        </div>
+    </form>
+    </main>
+
+    <footer>&copy; 2022 Mandy Girard</footer>
+    
+</body>
+</html> 
